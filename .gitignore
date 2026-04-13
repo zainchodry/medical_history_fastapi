@@ -1,0 +1,67 @@
+# ─── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+*.spec
+
+# ─── Virtual Environment ──────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ─── Environment Variables ────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Database ─────────────────────────────────────────────
+*.db
+*.sqlite3
+
+# ─── IDE / Editor ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ─── OS ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Testing / Coverage ──────────────────────────────────
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ─── Distribution / Packaging ────────────────────────────
+*.tar.gz
+*.whl
+
+# ─── Logs ─────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Misc ─────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
