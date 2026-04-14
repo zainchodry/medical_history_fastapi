@@ -1,5 +1,6 @@
 import enum
 from datetime import date, datetime, time
+from typing import Optional
 
 from pydantic import BaseModel, ConfigDict
 
@@ -17,7 +18,7 @@ class AppointmentBase(BaseModel):
     date: date
     start_time: time
     end_time: time
-    reason: str | None = None
+    reason: Optional[str] = None
 
 
 class AppointmentCreate(AppointmentBase):
@@ -25,10 +26,10 @@ class AppointmentCreate(AppointmentBase):
 
 
 class AppointmentUpdate(BaseModel):
-    date: date | None = None
-    start_time: time | None = None
-    end_time: time | None = None
-    reason: str | None = None
+    date: Optional[date] = None
+    start_time: Optional[time] = None
+    end_time: Optional[time] = None
+    reason: Optional[str] = None
 
 
 class AppointmentStatusUpdate(BaseModel):
@@ -40,5 +41,5 @@ class AppointmentOut(AppointmentBase):
 
     id: int
     status: str
-    created_at: datetime | None = None
-    updated_at: datetime | None = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
